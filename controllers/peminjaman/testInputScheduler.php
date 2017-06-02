@@ -8,7 +8,7 @@ require_once("./assets/dhtmlx/dhtmlxScheduler/codebase/connector/db_phpci.php");
 DataProcessor::$action_param ="dhx_editor_status";
 
 
-class Ruang_jadwal extends CI_Controller {
+class TestInputScheduler extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->database();
@@ -32,10 +32,11 @@ class Ruang_jadwal extends CI_Controller {
 	public function index()
 	{
 		//scheduler's view
-		//$data['jadwal'] = $this->load->view('peminjaman/ruang_jadwal');
+		$this->load->model('peminjaman/formPeminjamanModel');
+		$data['ruang'] = $this->formPeminjamanModel->getRuang();
 		$data['template_1'] = $this->load->view('layout/template-1', NULL, TRUE);
 		$data['template_2'] = $this->load->view('layout/template-2', NULL, TRUE);
-		$this->load->view('peminjaman/ruang_jadwal', $data);
+		$this->load->view('peminjaman/testInputSchedulerView', $data);
 		
 		/* yang lama
 		$data['menu'] = $this->load->view('themes/menu', NULL, TRUE);
@@ -96,6 +97,13 @@ class Ruang_jadwal extends CI_Controller {
 				$start = $v['start'];
 				$lama = $v['lama'];
 				$html = $v['html'];
+				$prodi = $v['prodi'];
+				$id_petugas = $v['id_petugas'];
+				$id_peminjam = $v['id_peminjam'];
+				$nama_peminjam = $v['nama_peminjam'];
+				$no_telp = $v['no_telp'];
+				$email = $v['email'];
+				$nomor = $v['nomor'];
 				$flag = $v['flag'];
 				$level = $v['status'];
 
@@ -156,17 +164,16 @@ class Ruang_jadwal extends CI_Controller {
 						$xml .= "<start_date><![CDATA[".$start_date."]]></start_date>";
 						$xml .= "<end_date><![CDATA[".$end_date."]]></end_date>";
 						$xml .= "<text><![CDATA[".$html."]]></text>";
+						$xml .= "<prodi><![CDATA[".$prodi."]]></prodi>";
+						$xml .= "<id_petugas><![CDATA[".$id_petugas."]]></id_petugas>";
+						$xml .= "<id_peminjam><![CDATA[".$id_peminjam."]]></id_peminjam>";
+						$xml .= "<nama_peminjam><![CDATA[".$nama_peminjam."]]></nama_peminjam>";
+						$xml .= "<no_telp><![CDATA[".$no_telp."]]></no_telp>";
+						$xml .= "<email><![CDATA[".$email."]]></email>";
+						$xml .= "<nomor><![CDATA[".$nomor."]]></nomor>";
 						$xml .= "<flag><![CDATA[".$flag."]]></flag>";
 						$xml .= "<level><![CDATA[".$level."]]></level>";
-						//-----------tes tambahan--------------
-						/*
-						$xml .= "<pengajar><![CDATA[".$rows['pengajar']."]]></pengajar>";
-						$xml .= "<kelas><![CDATA[".$rows['kelas']."]]></kelas>";
-						
-						//-------------------------------------
-						*/
 						$xml .= "<section_id>".$ruang."</section_id>";
-						
 						$xml .= "</event>";		
 
 				   }
@@ -226,6 +233,13 @@ class Ruang_jadwal extends CI_Controller {
 				$end = $v['end'];
 				$html = $v['html'];
 				$tgl_kegiatan = str_replace('-', '/', $v['tgl_kegiatan']);
+				$prodi = $v['prodi'];
+				$id_petugas = $v['id_petugas'];
+				$id_peminjam = $v['id_peminjam'];
+				$nama_peminjam = $v['nama_peminjam'];
+				$no_telp = $v['no_telp'];
+				$email = $v['email'];
+				$nomor = $v['nomor'];
 				$flag = $v['flag'];
 				$level = $v['status'];
 
@@ -254,17 +268,16 @@ class Ruang_jadwal extends CI_Controller {
 				$xml .= "<start_date><![CDATA[".$start_date."]]></start_date>";
 				$xml .= "<end_date><![CDATA[".$end_date."]]></end_date>";
 				$xml .= "<text><![CDATA[".$html."]]></text>";
+				$xml .= "<prodi><![CDATA[".$prodi."]]></prodi>";
+				$xml .= "<id_petugas><![CDATA[".$id_petugas."]]></id_petugas>";
+				$xml .= "<id_peminjam><![CDATA[".$id_peminjam."]]></id_peminjam>";
+				$xml .= "<nama_peminjam><![CDATA[".$nama_peminjam."]]></nama_peminjam>";
+				$xml .= "<no_telp><![CDATA[".$no_telp."]]></no_telp>";
+				$xml .= "<email><![CDATA[".$email."]]></email>";
+				$xml .= "<nomor><![CDATA[".$nomor."]]></nomor>";
 				$xml .= "<flag><![CDATA[".$flag."]]></flag>";
 				$xml .= "<level><![CDATA[".$level."]]></level>";
-				//-----------tes tambahan--------------
-				/*
-				$xml .= "<pengajar><![CDATA[".$rows['pengajar']."]]></pengajar>";
-				$xml .= "<kelas><![CDATA[".$rows['kelas']."]]></kelas>";
-				
-				//-------------------------------------
-				*/
 				$xml .= "<section_id>".$ruang."</section_id>";
-				
 				$xml .= "</event>";
 			}
 		}
