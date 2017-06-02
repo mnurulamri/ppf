@@ -64,96 +64,24 @@
 	function init() {
 
 		var sections=[
-			{key:"AJS" ,label:"AJS<br>150"},
-			{key:"E.103A" ,label:"E.103A<br>35"},
-			{key:"E.103B" ,label:"E.103B<br>35"},
-			{key:"E.201" ,label:"E.201<br>35"},
-			{key:"E.202" ,label:"E.202<br>10"},
-			{key:"E.203A" ,label:"E.203A<br>35"},
-			{key:"E.203B" ,label:"E.203B<br>35"},
-			{key:"E.204" ,label:"E.204<br>20"},
-			{key:"E.301" ,label:"E.301<br>40"},
-			{key:"E.302" ,label:"E.302<br>40"},
-			{key:"E.303" ,label:"E.303<br>40"},
-			{key:"E.304" ,label:"E.304<br>40"},
-			{key:"F.201" ,label:"F.201<br>10"},
-			{key:"F.202" ,label:"F.202<br>60"},
-			{key:"G.106" ,label:"G.106"},
-			{key:"G.201" ,label:"G.201<br>35"},
-			{key:"G.202" ,label:"G.202<br>35"},
-			{key:"G.203" ,label:"G.203<br>35"},
-			{key:"G.203A" ,label:"G.203A"},
-			{key:"G.203B" ,label:"G.203B"},
-			{key:"G.204" ,label:"G.204<br>35"},
-			{key:"G.205" ,label:"G.205<br>35"},
-			{key:"G.205A" ,label:"G.205A"},
-			{key:"G.205B" ,label:"G.205B"},
-			{key:"G.301" ,label:"G.301"},
-			{key:"G.302" ,label:"G.302"},
-			{key:"G.303" ,label:"G.303"},
-			{key:"G.304" ,label:"G.304"},
-			{key:"G.401" ,label:"G.401<br>40"},
-			{key:"G.402" ,label:"G.402<br>40"},
-			{key:"G.403" ,label:"G.403<br>40"},
-			{key:"G.404" ,label:"G.404<br>40"},
-			{key:"G.405" ,label:"G.405<br>40"},
-			{key:"H.101" ,label:"H.101<br>35"},
-			{key:"H.102" ,label:"H.102<br>40"},
-			{key:"H.103" ,label:"H.103<br>40"},
-			{key:"H.201" ,label:"H.201<br>30"},
-			{key:"H.202" ,label:"H.202<br>30"},
-			{key:"H.203" ,label:"H.203<br>30"},
-			{key:"H.204" ,label:"H.204<br>40"},
-			{key:"H.205" ,label:"H.205<br>40"},
-			{key:"H.301" ,label:"H.301<br>30"},
-			{key:"H.302" ,label:"H.302<br>30"},
-			{key:"H.303" ,label:"H.303<br>30"},
-			{key:"H.304" ,label:"H.304<br>40"},
-			{key:"H.305" ,label:"H.305<br>40"},
-			{key:"H.401" ,label:"H.401<br>30"},
-			{key:"H.402" ,label:"H.402<br>30"},
-			{key:"H.403" ,label:"H.403<br>30"},
-			{key:"H.404" ,label:"H.404<br>40"},
-			{key:"H.405" ,label:"H.405<br>40"},
-			{key:"H.501" ,label:"H.501<br>40"},
-			{key:"H.502" ,label:"H.502<br>40"},
-			{key:"H.503" ,label:"H.503<br>40"},
-			{key:"H.504" ,label:"H.504<br>40"},
-			{key:"M.101" ,label:"M.101<br>40"},
-			{key:"M.102" ,label:"M.102<br>40"},
-			{key:"M.103" ,label:"M.103<br>40"},
-			{key:"M.104" ,label:"M.104<br>35"},
-			{key:"M.301" ,label:"M.301<br>35"},
-			{key:"M.302" ,label:"M.302<br>30"},
-			{key:"M.303" ,label:"M.303<br>40"},
-			{key:"M.304" ,label:"M.304<br>40"},
-			{key:"N1.301A" ,label:"N1.301A<br>25"},
-			{key:"N1.301B" ,label:"N1.301B<br>35"},
-			{key:"N1.301C" ,label:"N1.301C<br>35"},
-			{key:"N1.302" ,label:"N1.302<br>-"},
-			{key:"N1.303" ,label:"N1.303<br>10"},
-			{key:"N1.304" ,label:"N1.304<br>35"},
-			{key:"N1.305" ,label:"N1.305<br>20"},
-			{key:"N1.306" ,label:"N1.306<br>20"},
-			{key:"N2.101" ,label:"N2.101<br>-"},
-			{key:"N2.102" ,label:"N2.102<br>40"},
-			{key:"N2.301" ,label:"N2.301<br>10"},
-			{key:"N2.302" ,label:"N2.302<br>35"},
-			{key:"N2.303" ,label:"N2.303<br>35"},
-			{key:"N2.304" ,label:"N2.304<br>35"},
-			{key:"N2.305" ,label:"N2.305<br>35"},
-			{key:"N2.306" ,label:"N2.306<br>30"},
-			{key:"Gd. Kom Lt 1" ,label:"Gd. Kom Lt 1"},
-			{key:"Gd. Kom Lt 3" ,label:"Gd. Kom Lt 3"},
-			{key:"Gd. Kom. 303" ,label:"Gd. Kom. 303"},
-			{key:"Kom-Cocacola" ,label:"Kom-Cocacola<br>30"},
-			{key:"Kom-Fanta" ,label:"Kom-Fanta<br>35"},
-			{key:"Kom-Fresty" ,label:"Kom-Fresty<br>30"},
-			{key:"Kom-Sprite" ,label:"Kom-Sprite<br>20"},
-			{key:"Lab. AV" ,label:"Lab. AV"},
-			{key:"B.301" ,label:"B.301"},
-			{key:"Lab. MM" ,label:"Lab. MM"},
-			{key:"Audito.Kom.", label:"Audito.Kom."},
+			{key:"AJS" ,label:"RUANG AJS"},
+			{key:"2" ,label:"RUANG 2"},
+			{key:"3" ,label:"RUANG 3"},
+			{key:"4" ,label:"RUANG 4"},
+			{key:"5" ,label:"RUANG 5"},
+			{key:"6" ,label:"RUANG 6"},
+			{key:"7" ,label:"RUANG 7"},
+			{key:"8" ,label:"RUANG 8"},
+			{key:"9" ,label:"RUANG 9"},
+			{key:"10" ,label:"RUANG 10"},
+			{key:"11" ,label:"RUANG 11"},
+			{key:"12" ,label:"RUANG 12"},
+			{key:"13" ,label:"RUANG 13"},
+			{key:"14" ,label:"RUANG 14"},
+			{key:"15" ,label:"RUANG 15"},
+			{key:"16" ,label:"RUANG 16"},
+			{key:"17" ,label:"RUANG 17"},
+			{key:"18" ,label:"RUANG 18"},
 			{key:"X" ,label:"X"}
 		];
 		
@@ -174,15 +102,17 @@
 		
 		scheduler.locale.labels.unit_tab = "Ruang"
 		scheduler.locale.labels.section_custom="Section";
+		scheduler.locale.labels.section_unit_kerja="Unit Kerja";
+		scheduler.locale.labels.section_custom="Nama Peminjam";
 		scheduler.config.details_on_create=true;
 		scheduler.config.details_on_dblclick=true;
 		scheduler.config.xml_date="%Y-%m-%d %H:%i";
 		scheduler.config.first_hour = 8;
 		scheduler.config.lightbox.sections=[	
 			{name:"description", height:70, map_to:"text", type:"textarea" , focus:true},
-			{name:"pengajar", height:70, map_to:"pengajar", type:"textarea" , focus:false, label:"pengajar"},
-			{name:"kelas", height:70, map_to:"kelas", type:"textarea" , focus:false, label:"kelas"},
-			{name:"custom", height:23, type:"select", options:sections, map_to:"section_id" },
+			{name:"unit_kerja", height:30, map_to:"unit_kerja", type:"textarea" , focus:false, label:"Unit Kerja"},
+			{name:"nama_peminjam", height:70, map_to:"nama_peminjam", type:"textarea" , focus:false, label:"nama_peminjam"},
+			{name:"custom", height:23, type:"select", options:sections, map_to:"details" },
 			{name:"time", height:72, type:"time", map_to:"auto"}
 		]
 		
@@ -197,9 +127,10 @@
 		
 		scheduler.init('scheduler_here',new Date(2017,01,20),"unit");
 		//scheduler.load("jadwal_units.xml");
-		scheduler.load("./ruang_jadwal/data");
+		scheduler.load("./scheduler_rapat/data_biasa");
 		
-		var dp = new dataProcessor("crud/update.php");
+		var dp = new dataProcessor("./scheduler_rapat/data_biasa");
+		dp.init(scheduler);
 	}
 
 	function show_minical(){
@@ -255,9 +186,9 @@ function date_opt(){
 		scheduler.config.first_hour = 8;
 		scheduler.config.lightbox.sections=[	
 			{name:"description", height:70, map_to:"text", type:"textarea" , focus:true},
-			{name:"pengajar", height:70, map_to:"pengajar", type:"textarea" , focus:false, label:"pengajar"},
-			{name:"kelas", height:70, map_to:"kelas", type:"textarea" , focus:false, label:"kelas"},
-			{name:"custom", height:23, type:"select", options:sections, map_to:"section_id" },
+			{name:"unit_kerja", height:30, map_to:"unit_kerja", type:"textarea" , focus:false, label:"Unit Kerja"},
+			{name:"nama_peminjam", height:70, map_to:"nama_peminjam", type:"textarea" , focus:false, label:"nama_peminjam"},
+			{name:"details", height:23, type:"select", options:sections, map_to:"details" },
 			{name:"time", height:72, type:"time", map_to:"auto"}
 		]
 		
